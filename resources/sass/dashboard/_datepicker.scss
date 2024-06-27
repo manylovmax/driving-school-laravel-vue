@@ -1,0 +1,12 @@
+@import "variables";
+
+.vdp-datepicker {
+    * {
+        background-color: $theme-secondary;
+    }
+    input {
+        color: #fff;
+        border: none;
+        border-radius: 2rem;
+    }
+}

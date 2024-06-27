@@ -1,0 +1,280 @@
+
+$vue-light: #00C683;
+$vue-light-darker: darken(#00C683, 13.5%);
+$vue-dark: #3A465F;
+
+// $theme-light: #37ACFF;
+$button-primary: $vue-light;
+$yellow: #FFF300;
+
+$pale-yellow: #FFFF34;
+// $pale-red: #FF5136;
+$pale-red: #ed553b;
+$red: #8B1312;
+$pale-green: #20CF5E;
+$pale-blue: #0E88B5;
+$pale-slate: #4A475B;
+
+
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 13.5%) !default;
+$gray-dark: lighten($gray-base, 20%) !default;
+$gray: lighten($gray-base, 22%) !default;
+$gray-light: lighten($gray-base, 46.7%) !default;
+$gray-lighter: lighten($gray-base, 80%) !default;
+
+// Gray and Brand Colors for use across theme
+$body-bg: #fff; //rgb(38, 38, 38);
+// $body-color: #fff; //#888;
+
+$background-dark: #ebebeb;
+$background-light: #f3f3f3;
+$theme-primary: $background-dark;
+$theme-secondary: $background-light;
+$theme-light: #37ACFF;
+$button-primary: #0095FF;
+$yellow: #FFF300;
+
+$link-color: $pale-blue;
+
+
+// close btn
+// $close-color: $body-color;
+// $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+// $close-font-size: $font-size-base * 3;
+// $close-text-shadow: none;
+
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(("100": $gray-100,
+"200": $gray-200,
+"300": $gray-300,
+"400": $gray-400,
+"500": $gray-500,
+"600": $gray-600,
+"700": $gray-700,
+"800": $gray-800,
+"900": $gray-900),
+$grays);
+
+// Green
+
+// $green-100: #80ffac !default;
+// $green-200: #2ef173 !default;
+// $green-300: #48e980 !default;
+// $green-400: #20CF5E !default;
+$green-100: lighten($pale-green, 40%) !default;
+$green-200: lighten($pale-green, 30%) !default;
+$green-300: lighten($pale-green, 20%) !default;
+$green-400: lighten($pale-green, 10%) !default;
+$green-500: $pale-green !default;
+$green-600: darken($pale-green, 10%) !default;
+$green-700: darken($pale-green, 20%) !default;
+$green-800: darken($pale-green, 25%) !default;
+$green-900: darken($pale-green, 30%) !default;
+// $green-700: #20CF5E !default;
+// $green-800: #20CF5E !default;
+// $green-900: #0f5c2a !default;
+
+$greens: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$greens: map-merge(("100": $green-100,
+"200": $green-200,
+"300": $green-300,
+"400": $green-400,
+"500": $green-500,
+"600": $green-600,
+"700": $green-700,
+"800": $green-800,
+"900": $green-900),
+$greens);
+
+$pale-blue-100: lighten($pale-blue, 40%);
+$pale-blue-200: lighten($pale-blue, 30%);
+$pale-blue-300: lighten($pale-blue, 20%);
+$pale-blue-400: lighten($pale-blue, 10%);
+$pale-blue-500: $pale-blue;
+$pale-blue-600: darken($pale-blue, 10%);
+$pale-blue-700: darken($pale-blue, 20%);
+$pale-blue-800: darken($pale-blue, 25%);
+$pale-blue-900: darken($pale-blue, 30%);
+
+$pale-blues: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$pale-blues: map-merge((
+"100": $pale-blue-100,
+"200": $pale-blue-200,
+"300": $pale-blue-300,
+"400": $pale-blue-400,
+"500": $pale-blue-500,
+"600": $pale-blue-600,
+"700": $pale-blue-700,
+"800": $pale-blue-800,
+"900": $pale-blue-900),
+$pale-blues);
+
+
+$blue-900: #002840;
+$blue-800: #55747F;
+$blue-700: #2F697F;
+$blue-500: #00507F;
+$blue-600: darken($blue-500, 5%);
+$blue-400: lighten($blue-500, 5%);
+$blue-300: #0078BF;
+$blue-200: lighten($blue-300, 5%);
+$blue-100: #AAE7FF;
+
+$blues: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$blues: map-merge((
+"100": $blue-100,
+"200": $blue-200,
+"300": $blue-300,
+"400": $blue-400,
+"500": $blue-500,
+"600": $blue-600,
+"700": $blue-700,
+"800": $blue-800,
+"900": $blue-900),
+$blues);
+
+$red-900: darken($pale-red, 30%);
+$red-800: darken($pale-red, 25%);
+$red-700: darken($pale-red, 20%);
+$red-600: darken($pale-red, 10%);
+$red-500: $pale-red;
+$red-400: lighten($pale-red, 10%);
+$red-300: lighten($pale-red, 20%);
+$red-200: lighten($pale-red, 30%);
+$red-100: lighten($pale-red, 40%);
+
+$reds: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$reds: map-merge(("100": $red-100,
+"200": $red-200,
+"300": $red-300,
+"400": $red-400,
+"500": $red-500,
+"600": $red-600,
+"700": $red-700,
+"800": $red-800,
+"900": $red-900),
+$reds);
+
+
+$yellow-900: darken($yellow, 30%);
+$yellow-800: darken($yellow, 25%);
+$yellow-700: darken($yellow, 20%);
+$yellow-600: darken($yellow, 10%);
+$yellow-500: $yellow;
+$yellow-400: lighten($yellow, 10%);
+$yellow-300: lighten($yellow, 20%);
+$yellow-200: lighten($yellow, 30%);
+$yellow-100: lighten($yellow, 40%);
+
+$yellows: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$yellows: map-merge(("100": $yellow-100,
+"200": $yellow-200,
+"300": $yellow-300,
+"400": $yellow-400,
+"500": $yellow-500,
+"600": $yellow-600,
+"700": $yellow-700,
+"800": $yellow-800,
+"900": $yellow-900),
+$yellows);
+
+$slate-900: darken($pale-slate, 20%);
+$slate-800: darken($pale-slate, 15%);
+$slate-700: darken($pale-slate, 10%);
+$slate-600: darken($pale-slate, 5%);
+$slate-500: $pale-slate;
+$slate-400: lighten($pale-slate, 15%);
+$slate-300: lighten($pale-slate, 30%);
+$slate-200: lighten($pale-slate, 40%);
+$slate-100: lighten($pale-slate, 50%);
+
+$slates: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$slates: map-merge(("100": $slate-100,
+"200": $slate-200,
+"300": $slate-300,
+"400": $slate-400,
+"500": $slate-500,
+"600": $slate-600,
+"700": $slate-700,
+"800": $slate-800,
+"900": $slate-900),
+$slates);
+
+
+.row {
+  &--colors div {
+    height: 4rem;
+    max-width: 4rem;
+    border-radius: 0.5rem;
+    margin: .5rem;
+  }
+
+  @each $color,
+  $value in $greens {
+    .green-#{$color} {
+      background-color: $value;
+    }
+  }
+
+  @each $color,
+  $value in $pale-blues {
+    .pale-blue-#{$color} {
+      background-color: $value;
+    }
+  }
+  @each $color,
+  $value in $blues {
+    .blue-#{$color} {
+      background-color: $value;
+    }
+  }
+
+  @each $color,
+  $value in $reds {
+    .red-#{$color} {
+      background-color: $value;
+    }
+  }
+
+  @each $color,
+  $value in $yellows {
+    .yellow-#{$color} {
+      background-color: $value;
+    }
+  }
+
+  @each $color,
+  $value in $slates {
+    .slate-#{$color} {
+      background-color: $value;
+    }
+  }
+
+  @each $color,
+  $value in $grays {
+    .gray-#{$color} {
+      background-color: $value;
+    }
+  }
+}

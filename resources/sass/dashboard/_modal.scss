@@ -1,0 +1,118 @@
+@import "variables.scss";
+
+.modal {
+
+  &__mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .7);
+    display: table;
+    transition: opacity .5s ease;
+  }
+
+  &__wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    overflow: auto;
+    /* z-index: 9999; */
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    max-height: 100vh;
+  }
+
+  &__container {
+    overflow: visible;
+    // margin: 2rem;
+    // padding: 20px 30px;
+    background-color: $theme-primary;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .5s ease;
+
+    // font-family: Helvetica, Arial, sans-serif;
+    >div {
+      padding: 1rem;
+    }
+  }
+
+  &__header {
+    margin-top: 0;
+    padding: .5rem 1rem !important;
+    border: none;
+    // color: map-get($greens, "100");
+    // background-color: #3B4B5B;
+    color: #B7E4FF;
+    text-align: center;
+
+    h3 {
+      margin: 0;
+      font-family: 'Lobster', cursive;
+    }
+
+    .close {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__body {
+    // margin: 20px 0;
+  }
+
+  &__footer {
+    border: none;
+    text-align: right;
+  }
+
+  &__default-button {
+    float: right;
+  }
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal__container,
+.modal-leave-active .modal__container {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.button-default {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.multiselect,
+.multiselect__tags,
+.multiselect__single,
+.multiselect__content,
+.multiselect__input {
+  background-color: $theme-secondary;
+  color: #fff;
+}

@@ -1,0 +1,75 @@
+.program {
+    display: flex; // Medium devices (tablets, less than 992px)
+    @media (max-width: 991px) {
+        flex-flow: column nowrap;
+    }
+    overflow: hidden;
+    border-radius: 1rem;
+    color: white;
+    margin-bottom: 2rem;
+    .program-top, .program-bot {
+        @media (max-width: 991px) {
+            min-height: auto;
+        }
+        min-height: 5rem;
+    }
+    p {
+        margin-bottom: 0.5rem;
+    }
+    &-title {
+        flex-basis: 60%;
+        padding: 1rem;
+        background-color: #37ACFF;
+    }
+    &-price {
+        flex-basis: 20%;
+        padding: 1rem;
+        background-color: #48687F;
+    }
+    &-cert {
+        flex-basis: 20%;
+        padding: 1rem;
+        background-color: #0077CC;
+    }
+}
+
+.timetable {
+    color: white;
+    display: flex;
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991px) {
+        flex-flow: column nowrap;
+    }
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 2rem;
+
+    .timetable-section{
+        padding: 1rem;
+    }
+    .section-1 {
+        flex-basis: 60%;
+        background-color: #37ACFF;
+    }
+    .section-2 {
+        flex-basis: 20%;
+        background-color: #48687F;
+    }
+    .section-3 {
+        flex-basis: 20%;
+        background-color: #0077CC;
+    }
+}
+
+#groups {
+    .card{
+        &-title {
+            min-height: 3.25rem;
+        }
+        margin-bottom: 2rem;
+    }
+}
+
+.list {
+  padding-left: 0;
+}

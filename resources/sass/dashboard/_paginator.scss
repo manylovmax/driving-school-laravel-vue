@@ -1,0 +1,29 @@
+@import 'variables.scss';
+
+.pagintor {
+  display: inline-block;
+  margin: 0 1rem;
+  color: map-get($grays, "300");
+
+  div {
+    display: inline-block;
+  }
+
+  &__current-page {
+    min-width: 5.5rem;
+  }
+
+  &__controls {
+    margin-left: 1rem;
+  }
+
+  &__controls .disabled {
+    color: map-get($grays, "600");
+    cursor: not-allowed;
+  }
+
+  &__arrow-prev,
+  &__arrow-next {
+    cursor: pointer;
+  }
+}

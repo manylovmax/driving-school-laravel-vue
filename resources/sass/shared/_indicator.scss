@@ -1,0 +1,50 @@
+.card__indicator-badge {
+  border-radius: .5rem;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 1rem;
+  vertical-align: middle;
+  background: map-get($grays, 800);
+
+  span {
+    position: relative;
+    display: inline-block;
+    margin-left: .5rem;
+    vertical-align: middle;
+    font-size: 1rem;
+    // padding: 0.5rem 0 0;
+  }
+}
+
+.indicator {
+  width: 1rem;
+  height: 1rem;
+  border-radius: .5rem;
+  position: relative;
+  display: inline-block;
+  // &--green {
+  //   background: map-get($greens, '600');
+  // }
+
+  // &--yellow {
+  //   background: map-get($yellows, '400');
+  // }
+
+  // &--red {
+  //   background: map-get($reds, '500');
+  // }
+
+  &--green {
+    background: map-get($greens, '400');
+  }
+
+  &--yellow {
+    background: map-get($pale-blues, '400');
+  }
+
+  &--red {
+    background: map-get($grays, '600');
+  }
+}
+

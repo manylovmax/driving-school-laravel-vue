@@ -1,0 +1,16 @@
+
+body {
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  // font-family: 'Roboto', sans-serif;
+}
+
+.router-view {
+  margin: 2rem 0;
+}
+
+.multiselect, .multiselect__tags {
+    border-radius: 2rem;
+    border: none;
+}

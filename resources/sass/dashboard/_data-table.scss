@@ -1,0 +1,132 @@
+@import "variables.scss";
+
+.data-table {
+  // margin: 1rem;
+  background-color: $gray-dark;
+  user-select: none;
+  border-radius: 1rem !important;
+  overflow: hidden;
+
+  &__head {
+    // overflow-y: hidden;
+  }
+
+  &__head-row {
+    // background-color: map-get($grays, '800');
+    display: flex;
+    flex-wrap: nowrap;
+    display: -ms-flexbox;
+    -ms-flex-wrap: nowrap;
+    // overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.0625em;
+    padding: 0.75rem 1.25rem;
+  }
+
+  &__body {
+    padding: 0 1.25rem 0.75rem;
+  }
+
+  &__body-row {
+    cursor: pointer;
+    display: flex;
+    padding: 0 .5rem;
+
+    &:hover {
+      // border: 1px solid #00C683;
+      background-color: lighten($gray-base, 22%);
+      border-radius: 1rem;
+      border-color: rgba(3, 27, 78, .1);
+      box-shadow: 0 2px 4px rgba(3, 27, 78, .06);
+      position: relative;
+      // transform: scale(1.025);
+      z-index: 11;
+    }
+
+    // &:nth-child(even) {
+    //   background-color:
+    // }
+
+  }
+
+  &__body-col,
+  &__head-col {
+    padding: .25rem;
+    flex-basis: 20%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__body-col--indicator:first-child,
+  &__head-col--indicator:first-child {
+      flex-basis: 2rem;
+    }
+}
+
+
+.btn-add {
+  font-family: 'Roboto', Helvetica, serif;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #fff;
+  color: $gray;
+  border-radius: 15px;
+  height: 30px;
+  padding: 0.2rem;
+}
+
+.btn-add.btn-add--outline {
+  // display: inline-block;
+  // vertical-align: middle;
+  // text-align: center;
+  // cursor: pointer;
+  // font-weight: 300;
+  border-radius: 15px;
+  height: 30px;
+  // border: 2px solid map-get($blues, "500");
+  border: 2px solid map-get($grays, "300");
+  color: map-get($grays, "300");
+  background-color: transparent;
+  // color: map-get($blues, "300");
+  // font-size: 26px;
+
+  &:hover {
+    border: 2px solid map-get($grays, "100");
+    color: map-get($grays, "100");
+  }
+}
+
+.search-input {
+  height: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+  padding: 0 15px 0 30px;
+  border: 2px solid #e3e3e3;
+  color: map-get($grays, "900");
+  font-weight: 700;
+  outline: none;
+  border-radius: 15px;
+  margin-right: 10px;
+  transition: border-color 0.6s ease;
+  background: map-get($grays, "100") url(/images/icons/search.png) 8px 3px no-repeat;
+  background-size: 20px;
+  vertical-align: middle !important;
+
+  &:focus {
+    border-color: map-get($blues, "500");
+  }
+}
+
+.export-link {
+  text-align: right;
+  text-decoration: underline;
+}

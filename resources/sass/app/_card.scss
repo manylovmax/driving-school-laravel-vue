@@ -1,0 +1,32 @@
+@import "colors";
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-family: 'Open Sans', serif !important;
+
+  &__header {
+    padding-bottom: 0.5rem;
+  }
+
+  &__title {
+    font-family: Lobster !important;
+  }
+
+  &__description {}
+
+  &__body {
+    padding-bottom: 0.5rem;
+  }
+
+  &__footer {
+    padding-top: .5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+  p {
+    margin: 0;
+  }
+}

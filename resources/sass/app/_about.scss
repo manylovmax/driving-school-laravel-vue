@@ -1,0 +1,26 @@
+.partner {
+
+    margin: 2rem 0;
+
+    &-title {
+        margin-top: 2rem;
+    }
+    &-logo {
+        min-height: 8rem;
+        display: block;
+    }
+}
+
+.separator-vertical {
+    position: absolute;
+    border: 2px solid $gray;
+    height: 40%;
+    width: 0;
+    top: 20%;
+    left: -2px;
+}
+
+
+#about, #about p {
+    font-size: 1.25rem;
+}

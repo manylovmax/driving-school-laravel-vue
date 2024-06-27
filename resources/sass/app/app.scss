@@ -1,0 +1,32 @@
+@import "colors.scss";
+@import "~bootstrap/scss/bootstrap";
+@import "bootstrap-overrides.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "navbar.scss";
+@import "header.scss";
+@import "about.scss";
+@import "education.scss";
+@import "portfolio.scss";
+@import "contacts.scss";
+@import "footer.scss";
+@import "modal.scss";
+@import "card.scss";
+@import "vue-carousel.scss";
+@import "../shared/all";
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic');
+
+
+.grecaptcha-badge {
+  top: 14px !important;
+}
+
+#vk_community_messages {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}

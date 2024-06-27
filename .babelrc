@@ -1,0 +1,5 @@
+{
+  "presets": ["env", "vue-app"],
+  "plugins": ["transform-object-rest-spread", "transform-class-properties", "babel-plugin-root-import"],
+  "retainLines": true
+}

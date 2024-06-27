@@ -1,0 +1,47 @@
+<template>
+  <div v-if="labels" >
+    <div class="data-table">
+      <div class="data-table__head">
+        <div class="data-table__head-row">
+          <div
+            v-for="(vaule, key) in labels"
+            :key="key"
+            class="data-table__head-col">{{ vaule }}
+          </div>
+        </div>
+      </div>
+      <div class="data-table__body">
+        <div
+          v-for="object in objects"
+          :key="object.id"
+          class="data-table__body-row"
+          @click="update(object.id)">
+          <div
+            v-for="(value, key) in labels"
+            :key="key"
+            class="data-table__body-col"
+          >{{ object[key] }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+
+export default {
+	props: {
+		objects: { type: Array, default: () => [] },
+		labels: { type: Object, default: () => null },
+		// rows: { type: Array, default: () => [] },
+		// columns: { type: Array, default: () =>[] },
+
+	},
+	methods: {
+		update: function(id) {
+			this.$emit('update', id);
+		},
+	}
+};
+</script>
